@@ -9,14 +9,13 @@ def first_spicy_batch(n)
   right = n
 
   while left < right
-    mid = left + (right - left) /2
+    mid = left + (right - left)/2
 
     if is_spicy_batch(mid)
-      right = mid 
-
+      right = mid
     else
-      left = mid +1
+      left = mid + 1
     end
-  end
-  left 
+  end 
+left  
 end
